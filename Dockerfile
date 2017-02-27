@@ -10,7 +10,7 @@ ENV USER nginx
 RUN adduser -s /sbin/nologin -D -H ${USER}
 
 # Install prerequisites and update certificates
-RUN apk --update --no-cache add ca-certificates build-base openssl openssl-dev && \
+RUN apk --update --no-cache add ca-certificates build-base openssl openssl-dev pcre pcre-dev && \
     update-ca-certificates && \
     rm -rf /var/cache/apk/*
 
