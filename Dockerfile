@@ -71,7 +71,6 @@ RUN cd /tmp/build/nginx/${NGINX_VERSION} && \
         --without-stream_upstream_hash_module \
         --without-stream_upstream_least_conn_module \
         --without-stream_upstream_zone_module \
-        --without-pcre \
         --with-threads \
         --with-ipv6 \
         --add-module=/tmp/build/nginx-rtmp-module/nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION} && \
